@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection - Jingze Liu, Guanting Guo, Huihui Song, Kaihua Zhang, Guangcan Liu, Pengfei Zhu">
+  <meta name="description" content="We propose a Structural Consensus Network for cross-domain co-salient object detection, learning transferable structural cues to robustly localize common salient objects across domains.">
+  <meta name="keywords" content="co-salient object detection, cross-domain, structural consensus, domain generalization, saliency detection, deep learning, computer vision, AI">
+  <meta name="author" content="Jingze Liu, Guanting Guo, Huihui Song, Kaihua Zhang, Guangcan Liu, Pengfei Zhu">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Nanjing University of Information Science and Technology &amp; Southeast University">
+  <meta property="og:title" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection">
+  <meta property="og:description" content="We propose a Structural Consensus Network for cross-domain co-salient object detection, learning transferable structural cues to robustly localize common salient objects across domains.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Jingze Liu">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="co-salient object detection">
+  <meta property="article:tag" content="cross-domain">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <meta name="twitter:title" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection">
+  <meta name="twitter:description" content="We propose a Structural Consensus Network for cross-domain co-salient object detection, learning transferable structural cues to robustly localize common salient objects across domains.">
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection">
+  <meta name="citation_author" content="Liu, Jingze">
+  <meta name="citation_author" content="Guo, Guanting">
+  <meta name="citation_author" content="Song, Huihui">
+  <meta name="citation_author" content="Zhang, Kaihua">
+  <meta name="citation_author" content="Liu, Guangcan">
+  <meta name="citation_author" content="Zhu, Pengfei">
+  <meta name="citation_publication_date" content="2024">
+  <meta name="citation_conference_title" content="CONFERENCE_NAME">
+  <!-- TODO: If you host the PDF on this site, update this URL -->
+  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <title>Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection | Academic Research</title>
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" href="data:,">
+  <link rel="apple-touch-icon" href="data:,">
+
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <!-- Non-critical CSS - Keep (safe even if not used) -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection",
+    "description": "We propose a Structural Consensus Network for cross-domain co-salient object detection, learning transferable structural cues to robustly localize common salient objects across domains.",
+    "author": [
+      { "@type": "Person", "name": "Jingze Liu", "affiliation": { "@type": "Organization", "name": "Nanjing University of Information Science and Technology" } },
+      { "@type": "Person", "name": "Guanting Guo", "affiliation": { "@type": "Organization", "name": "Nanjing University of Information Science and Technology" } },
+      { "@type": "Person", "name": "Huihui Song", "affiliation": { "@type": "Organization", "name": "Nanjing University of Information Science and Technology" } },
+      { "@type": "Person", "name": "Kaihua Zhang", "affiliation": { "@type": "Organization", "name": "School of Automation, Southeast University" } },
+      { "@type": "Person", "name": "Guangcan Liu", "affiliation": { "@type": "Organization", "name": "School of Automation, Southeast University" } },
+      { "@type": "Person", "name": "Pengfei Zhu", "affiliation": { "@type": "Organization", "name": "School of Automation, Southeast University" } }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": { "@type": "Organization", "name": "CONFERENCE_OR_JOURNAL_NAME" },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["co-salient object detection", "cross-domain", "structural consensus", "domain generalization", "saliency detection", "deep learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": { "@type": "WebPage", "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE" }
+  }
+  </script>
+
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nanjing University of Information Science and Technology & Southeast University",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+
+              <h1 class="title is-1 publication-title">
+                Learning Structural Consensus Network for Cross-Domain Co-Salient Object Detection
+              </h1>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Jingze Liu<sup>1</span>,
+                <span class="author-block">Guanting Guo<sup>1</span>,
+                <span class="author-block">Huihui Song<sup>1</span>,
+                <span class="author-block">Kaihua Zhang<sup>2</span>,
+                <span class="author-block">Guangcan Liu<sup>2</span>,
+                <span class="author-block">Pengfei Zhu<sup>2</span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <sup>1</sup>Nanjing University of Information Science and Technology
+                </span>
+                <br>
+                <span class="author-block">
+                  <sup>2</sup>School of Automation, Southeast University
+                </span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Paper (disabled / non-clickable) -->
+                  <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark is-disabled"
+                       role="button" aria-disabled="true" tabindex="-1">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span>
+
+                  <!-- Code -->
+                  <span class="link-block">
+                    <a href="https://github.com/jingze987/SCNet" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaser image (replaces teaser video) -->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <!-- TODO: Put your teaser image at static/images/teaser.png (or change the path below) -->
+          <figure class="image">
+            <img src="static/images/pipeline.jpg" alt="Teaser image" loading="eager">
+          </figure>
+
+          <h2 class="subtitle has-text-centered">
+            <!-- TODO: Replace with your teaser caption -->
+            The pipeline of our SCNet.
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- End teaser image -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                <!-- TODO: Replace with your paper abstract -->
+                Co-salient object detection (CoSOD) focuses on segmenting common and salient objects that share semantic attributes across multiple images. Despite considerable progress, prevailing methods are typically trained and evaluated within a single domain, which significantly limits their generalization in real-world scenarios characterized by diverse domains.
+To tackle this challenge, we propose a Structural Consensus Network (SCNet) that considers  the domain-invariant shared geometric layout of the co-salient objects as prior to enhance the cross-domain generalization for CoSOD.
+The SCNet incorporates two key components: a Structural Consensus Learning (SCL) module and a Structural Consensus Denoising (SCD) module. The SCL module adaptively learns structural consensus that encodes the geometric layout by emphasizing object boundaries of co-salient regions, while the SCD module leverages dynamic convolutional kernels as adaptive low-pass filters for local context learning that can effectively enhance the consensus compactness while preserving sharp object boundaries.
+By cascading SCL and SCD, our SCNet effectively extracts high-quality structural consensus representations, achieving superior performance compared to a variety of state-of-the-art methods on cross-domain benchmark datasets.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
+    <footer class="footer"> <div class="container"> <div class="columns is-centered"> <div class="column is-8"> <div class="content"> <p> This project website is adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>. </p> </div> </div> </div> </div> </footer>
+  </main>
+</body>
+</html>
